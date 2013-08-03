@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:background="@drawable/splash_bg">
+	  <TableRow android:layout_height="fill_parent" android:layout_width = "wrap_content" android:paddingLeft="25px"  android:paddingTop="35px">
+	 
+	  <ImageView android:id="@+id/simple_anim"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:layout_centerHorizontal="true"
+          android:background="@anim/simple_animation"
+           />
+           <LinearLayout android:id="@+id/splashtextlayout" android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingLeft = "8px" android:paddingTop="2px" > 
+	<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="24px"
+		 android:textColor="#fff" android:text="@string/loading" ></TextView>
+		</LinearLayout>
+		</TableRow>
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_lobby_bg"
+    android:keepScreenOn="true"
+    android:paddingLeft="25px"
+    android:paddingTop="10px"
+    android:paddingRight="15px"
+    android:paddingBottom="10px">
+		 	<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" android:layout_marginTop="10px">
+  			<LinearLayout 
+				android:layout_width="wrap_content" 
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:gravity="center_vertical" 
+				android:paddingLeft="10px">
+				<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" >
+					<TextView 
+							android:text="@string/mainlobby" 
+							android:layout_width="wrap_content"	
+							android:layout_height="wrap_content" 
+							android:linksClickable="true" 
+							android:textSize="27px" 
+							android:textColor="#ffffff" 
+							android:id="@+id/mainlobbyTV"
+							/>		
+				</TableRow>	
+		  		<TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" >
+						<TextView 
+								android:text="COLERTY " 
+								android:layout_width="fill_parent"	
+								android:layout_height="wrap_content" 
+								android:id="@+id/actionName"	
+								android:linksClickable="true" 
+								android:textSize="17px" 
+								android:gravity="left"
+								android:textColor="#BFD7EF" android:paddingTop="5px"/>		
+				</TableRow>		
+			</LinearLayout>
+			<LinearLayout 
+				android:layout_width="wrap_content" 
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:gravity="top" android:paddingLeft="70px">
+				<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" >
+					<TextView 
+						android:text="@string/playersonline" 
+						android:id="@+id/playersview" 
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+						android:textColor="#6D6E71" android:textSize="16px"/>	
+				</TableRow>
+				<TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingTop="5px">
+					<TextView
+							android:text="00000 " 
+							android:id="@+id/playersonline" 
+							android:layout_width="fill_parent"	
+							android:layout_height="wrap_content"
+					 		android:textSize="24px"   
+					 		android:textColor="#ffffff"
+					 		android:gravity="center_horizontal"/>		
+				</TableRow>
+			</LinearLayout>
+	</LinearLayout>
+	<LinearLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			>
+		<LinearLayout 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			 android:paddingTop="30px" android:layout_marginLeft="10px">
+				<TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" >
+					<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+						<TextView android:text="@string/realmoneybalence" 
+								  android:id="@+id/realmoneytextview" 
+								  android:layout_width="wrap_content"	
+								  android:layout_height="wrap_content" 
+							 	  android:textSize="16px" 
+							 	  android:textColor="#6D6E71"/>
+					</TableRow>
+					<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+						<TextView android:text="0" 
+								  android:id="@+id/realmoney" 
+								  android:layout_width="wrap_content" 
+								  android:layout_height="wrap_content" 
+							      android:textSize="20px" 
+							      android:textColor="#ffffff" android:paddingTop="5px"/>
+						<TextView android:text=""
+									android:id="@+id/realmoneysymbel"
+								  android:layout_width="wrap_content" 
+								  android:layout_height="wrap_content" 
+							      android:textSize="19px" 
+							      android:textColor="#6D6E71" android:paddingTop="5px"/>
+					</TableRow>
+					<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingTop="10px">
+						<TextView android:text="@string/playmoneybalence" 
+								  android:id="@+id/playmoneytextview" 
+								  android:layout_width="wrap_content"	
+								  android:layout_height="wrap_content"
+								  android:textSize="16px" 
+								  android:textColor="#6D6E71"/>
+					</TableRow>
+					<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+						<TextView android:text="0" 
+								  android:id="@+id/playmoney" 
+								  android:layout_width="wrap_content"	
+								  android:layout_height="wrap_content"
+							 	  android:textSize="20px" 
+							 	  android:textColor="#ffffff" android:paddingTop="5px"/>
+						<TextView android:text="" 
+								  android:id="@+id/playmoneysymbel"
+								  android:layout_width="wrap_content" 
+								  android:layout_height="wrap_content" 
+							      android:textSize="19px" 
+							      android:textColor="#6D6E71" android:paddingTop="5px"/>
+					</TableRow>
+				</TableLayout>
+				</LinearLayout>
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent" 
+				android:gravity="right|bottom">
+				<TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="right">
+					<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" >
+						<Button android:text="@string/startplaying" 
+								android:background="@drawable/mainbutton_bg" 
+								android:clickable="true"
+								android:id="@+id/startplayingbutton" 
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content"
+								android:textColor="#000000" 
+								android:textSize="19px"/>
+					</TableRow>
+					<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" >
+						<Button android:text="@string/settings" 
+								android:background="@drawable/mainbutton_bg" 
+								android:clickable="true"
+								android:id="@+id/settingbutton" 
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content"
+								android:textColor="#000000"
+								android:textSize="19px"/>
+					</TableRow>
+					<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" >
+						<Button android:text="@string/myaccount" 
+								android:background="@drawable/mainbutton_bg" 
+								android:clickable="true"
+								android:id="@+id/myaccountbutton" 
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content"
+								android:textColor="#000000"
+								android:textSize="19px"/>
+					</TableRow>
+					<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" >
+						<Button android:text="@string/referafriend" 
+								android:background="@drawable/mainbutton_bg" 
+								android:clickable="true"
+								android:id="@+id/referfriendbutton" 
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content"
+								android:textColor="#000000"
+								android:textSize="19px"/>
+								
+					</TableRow>
+					<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" >
+						<Button android:text="@string/exitgame" 
+								android:background="@drawable/mainbutton_bg" 
+								android:clickable="true"
+								android:id="@+id/exitButton" 
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content"
+								android:textColor="#000000"
+								android:textSize="19px"/>
+					</TableRow>
+				</TableLayout>
+		</LinearLayout>
+</LinearLayout>
+</LinearLayout>

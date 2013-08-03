@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="0px"
+    android:keepScreenOn="true"
+    >
+  
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+       
+         <bap.texas.TableView
+		      android:id="@+id/table"
+              android:visibility="visible"
+		      android:layout_width="fill_parent"
+		      android:layout_height="fill_parent" >
+		</bap.texas.TableView>
+		 <LinearLayout android:id="@+id/logout"	android:layout_width="fill_parent" 
+						android:layout_height="fill_parent" android:gravity="top"
+						android:orientation="vertical" android:paddingLeft = "5px" 
+						android:paddingRight ="5px" 
+						android:paddingTop = "5px"> 
+						
+					 <LinearLayout 	android:layout_width="fill_parent" 
+									android:layout_height="wrap_content" android:gravity="left"> 
+						<Button android:id="@+id/tablesettingB" 
+					         	  android:layout_width="wrap_content" 
+					              android:layout_height="wrap_content" 
+					              android:visibility="visible"
+					              android:background ="@drawable/tablesettingbackground"
+					              android:layout_alignRight="@+id/table"
+					              android:textColor="#fff"/> 
+								
+				    
+				      <LinearLayout android:layout_width="fill_parent" 
+									android:layout_height="wrap_content" android:gravity="right"> 
+				     	   <Button android:id="@+id/tableexitB"  
+					                android:layout_width="wrap_content" 
+					              android:layout_height="wrap_content" 
+					               android:background="@drawable/exitbackground" 
+					               android:textColor="#fff"/> 
+					             
+					 </LinearLayout>
+					  </LinearLayout>
+		 </LinearLayout>
+          <LinearLayout 
+			android:id="@+id/moveHolder"
+			android:layout_height="fill_parent" 
+			android:gravity="bottom"
+			android:visibility="invisible"
+			android:orientation="vertical" 
+			android:layout_width="fill_parent"> 
+			
+				<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+					     android:orientation="vertical" 
+					     android:layout_gravity="bottom|center_horizontal" 
+					     android:layout_height="wrap_content" 
+					     android:layout_marginLeft="0dip" 
+					     android:layout_width="fill_parent"> 
+					
+					     <TableRow> 
+							   <TextView android:id="@+id/messageText"
+								 android:layout_width="200dip"
+								 android:layout_height="20dip"
+						         android:maxLines="1"
+						         android:gravity="right"
+						         android:layout_centerHorizontal="true"
+								/>
+					     </TableRow> 
+					     <LinearLayout android:id="@+id/buttonBar" android:layout_width="fill_parent" android:layout_height="fill_parent">  
+						      <LinearLayout 
+									
+									android:layout_width="wrap_content" 
+									android:layout_height="fill_parent" 
+									android:gravity="bottom"
+									> 
+									<Button android:id="@+id/foldB" android:text="" 
+						               android:layout_height="wrap_content" 
+						               android:layout_width="wrap_content"
+						               android:layout_alignRight="@+id/buttonBar"
+						               android:background="@drawable/btn_red"
+						               android:textColor="#fff"
+						              /> 
+				               </LinearLayout>
+				               <LinearLayout 
+									
+									android:layout_width="fill_parent" 
+									android:layout_height="fill_parent" 
+									android:gravity="bottom|right"
+									> 
+						          <Button android:id="@+id/callB" android:text="Call" 
+						               android:layout_height="wrap_content" 
+						               android:layout_width="wrap_content"
+						               android:layout_alignLeft="@+id/buttonBar"
+						               android:background="@drawable/btn_yellow"
+						               android:textColor="#fff" 
+						               /> 
+						          <Button android:id="@+id/raiseB" android:text="" 
+						               android:layout_height="wrap_content" 
+						               android:layout_width="wrap_content"
+						               android:layout_centerInParent="@+id/buttonBar"
+						               android:background="@drawable/btn_green"
+						               android:textColor="#fff"
+						              /> 
+						          
+						     </LinearLayout>
+						     
+					     </LinearLayout> 
+					</TableLayout> 
+			</LinearLayout>
+			
+			<LinearLayout 
+			android:id="@+id/sitInHolder"
+			android:layout_width="wrap_content" 
+			android:layout_height="fill_parent" 
+			android:gravity="bottom"
+			android:visibility="invisible"
+			android:orientation="vertical" android:paddingBottom="2px" android:paddingLeft="50px" >  
+			
+				<Button android:id="@+id/sitInB" 
+			              android:layout_width="100px" 
+			              android:layout_height="32sp" 
+			              android:width="65sp"
+			              android:height="25sp"
+			              android:text="Sit-in" 
+			              android:visibility="visible"
+			              android:background="@drawable/sbutton_bg"
+			              android:textColor="#fff"
+			          /> 
+			</LinearLayout>
+			
+          <LinearLayout 
+			android:id="@+id/chatHolder"
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent" 
+			android:gravity="bottom|center"
+			android:orientation="horizontal"
+			android:layout_alignParentBottom="true" 
+			android:paddingLeft="4px"
+			android:paddingRight="4px"
+			>
+			<!--<Button android:id="@+id/chatB" 
+		        	  android:text="Chat"
+		              android:layout_width="wrap_content" 
+		              android:layout_height="wrap_content" 
+		              android:width="59sp"
+		              android:height="25sp"
+		              android:visibility="invisible"
+		              android:layout_alignRight="@+id/table"
+		          	  android:background="@drawable/sbutton_bg"
+		          	  android:textColor="#fff"/>
+          	  -->
+          	  <SlidingDrawer 
+				android:layout_width="fill_parent" 
+				android:id="@+id/SlidingDrawer" 
+				android:handle="@+id/slideHandleButtonlayout"
+				android:content="@+id/contentLayout"
+				android:layout_height="276dip">
+				<LinearLayout 
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:background="@drawable/chat_head"
+					android:id="@+id/slideHandleButtonlayout"
+					android:gravity="right|center_vertical">
+					<TextView 
+						android:id="@+id/chatheadTV"
+						android:layout_width="390px"
+						android:layout_height="fill_parent"
+						android:paddingRight="100px"/>
+					<Button 
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:id="@+id/slideHandleButton"
+						android:background="@drawable/chat_1"/>
+					<TextView 
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:paddingLeft="7px"/>
+				</LinearLayout>
+				
+				<LinearLayout 
+					android:layout_width="450px"
+					android:id="@+id/contentLayout" 
+					android:orientation="vertical"
+					android:gravity="center|top" 
+					android:layout_height="wrap_content"
+					android:background="@drawable/chat_head_1">
+					<TableLayout  android:layout_width="fill_parent" android:layout_height="fill_parent">
+						<ScrollView 
+		  						android:layout_width="fill_parent"  
+		  						android:layout_height="wrap_content" 
+		  						android:id="@+id/scrollview" >
+		  						<!--android:scrollbarAlwaysDrawVerticalTrack="true"
+		  						 android:scrollbarTrackVertical="@drawable/scrollview_background"
+		  						 android:scrollbarThumbVertical="@drawable/dealer"-->
+		  						
+		  						
+							<TableRow 
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content" 
+								android:paddingTop="5px"
+								android:paddingLeft="5px">
+								<TextView 
+									android:id="@+id/chatChatText" 
+									android:text=""
+									android:layout_width="450px" 
+									android:freezesText="false"
+									android:layout_height="180px" 
+									android:textSize="12px"
+									android:scrollbars="vertical" 
+									android:gravity="bottom"
+									android:paddingLeft="15px" />
+							</TableRow>
+						</ScrollView>
+					<TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_horizontal">
+					<LinearLayout 
+							android:layout_width="fill_parent" 
+							android:layout_height="fill_parent"
+							android:gravity="center_vertical"  
+							android:layout_marginLeft="5px" 
+							android:paddingTop="18px">
+						<EditText  
+							android:id="@+id/chatSendText" 
+							android:text="" 
+							android:layout_width="410px" 
+							android:singleLine="true" 
+							android:layout_height="40px" 
+							android:textSize="18px" 
+							android:autoText="true" 
+							android:paddingTop="5px" 
+							/>
+						<TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingLeft="10px"  >
+							<Button  
+								android:id="@+id/chatSendB"  
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content"
+								android:background="@drawable/send_bg" 
+								android:textColor="#fff"/>
+						</TableRow>
+					</LinearLayout>
+				</TableRow>
+			</TableLayout>
+			
+			</LinearLayout>
+			</SlidingDrawer>
+	       </LinearLayout>
+	       <!--  <LinearLayout 
+	       			android:id="@+id/sliderBar" 
+	       			android:layout_marginLeft="115px" 
+	       			android:layout_marginBottom="75px" 
+	       			android:layout_alignParentBottom="true" 
+	       			android:layout_width="225px" 
+	       			android:layout_height="120px" 
+	       			android:visibility="invisible"
+	       			android:background="@drawable/rectangle" 
+	       			android:orientation="vertical" > -->
+	       <LinearLayout 
+	       			android:id="@+id/sliderBar" 
+	       		 
+	       			
+	       			android:layout_width="fill_parent" 
+	       			android:layout_height="fill_parent" 
+	       			android:visibility="invisible"
+	       			android:background="@drawable/rectangle" 
+	       			
+	       			 >
+	       		<LinearLayout 	
+	       			android:layout_width="290px" 
+	       			android:layout_height="fill_parent" 
+	       			android:layout_marginLeft="95px"
+	       			android:layout_alignParentBottom="true"
+	       			android:orientation="vertical"
+	       			android:gravity="center_vertical"
+	       			>
+	       			<LinearLayout 	
+	       			android:layout_width="290px" 
+	       			android:layout_height="wrap_content" 
+	       			android:background="@drawable/bet_slider_system_black_bg22"
+	       			android:orientation="vertical"
+	       			>
+	       			<LinearLayout  android:layout_width="fill_parent" 
+				              android:layout_height="wrap_content" 
+				              android:gravity="center"
+				              >
+				       <TableRow   
+				       			android:layout_width="wrap_content" 
+				              	android:layout_height="wrap_content"   
+					              	android:paddingRight="10px"> 
+						    <Button android:layout_width="wrap_content"
+						    		android:layout_height="wrap_content"
+						    		android:background="@drawable/btn_min"
+						    		android:id="@+id/minButtton"/>
+					    </TableRow>
+					     <TableRow   
+				       			android:layout_width="wrap_content" 
+				              	android:layout_height="wrap_content"   
+					              	android:paddingRight="10px"> 
+					    <Button android:layout_width="wrap_content"
+					    		android:layout_height="wrap_content"
+					    		android:background="@drawable/btn_pot"
+					    		android:paddingRight="5px"
+					    		android:id="@+id/potButtton"/>
+					     </TableRow>
+					     <TableRow   
+				       			android:layout_width="wrap_content" 
+				              	android:layout_height="wrap_content"   
+					              > 
+					    <Button android:layout_width="wrap_content"
+					    		android:layout_height="wrap_content"
+				    			android:background="@drawable/btn_max"
+				    			android:id="@+id/maxButtton"/>
+				    	 </TableRow>
+				    </LinearLayout>
+	       			<TableRow  android:layout_width="fill_parent" 
+				              android:layout_height="wrap_content" 
+				              android:gravity="center_horizontal|center_vertical">
+				              
+					     <Button android:id="@+id/raisecancle" 
+				              android:layout_width="wrap_content" 
+				              android:layout_height="wrap_content" 
+				              android:width="65sp"
+				              android:height="25sp"
+				              android:visibility="visible"
+				              android:gravity="center_vertical"
+				              android:background="@drawable/btn_cancel"
+				              android:textColor="#fff"
+					          /> 
+				          <LinearLayout 	
+				       			android:layout_width="130px" 
+				       			android:layout_height="70px" 
+				       			android:orientation="vertical" >
+					          <TextView 
+					          		android:text="$2000 to call"
+					          	  android:layout_width="fill_parent" 
+					              android:layout_height="wrap_content"
+					              android:gravity="center"
+					              android:id="@+id/totalamount"
+					              android:textSize="14px"
+					              android:textStyle="bold"/>
+				              <TextView 
+				              	android:id="@+id/seekvalue"
+				              	  android:layout_width="fill_parent" 
+					              android:layout_height="fill_parent"
+					              android:gravity="center"
+					              android:textSize="30px"
+					              android:textStyle="bold"/>
+			              </LinearLayout>
+		       			<Button android:id="@+id/raiseACCEPT" 
+					              android:layout_width="wrap_content" 
+					              android:layout_height="wrap_content" 
+					              android:gravity="center_vertical"
+					              android:width="65sp"
+					              android:height="25sp"
+					              android:visibility="visible"
+					              android:background="@drawable/btn_accept"
+					              android:textColor="#fff"
+					          /> 
+				      </TableRow>
+				      
+			     	 <!--  
+			     	 								 android:progressDrawable="@drawable/seek_background"
+			     	 
+			     	  <EditText android:id="@+id/progressText"
+						 android:layout_width="wrap_content"
+						 android:layout_height="40dip"
+				         android:editable="true"
+				         android:singleLine="true"
+				         android:gravity="fill_horizontal"
+				         android:text="nagarjun"
+				         android:layout_marginTop="35dip" 
+			             android:layout_marginLeft="55px"
+						/>
+						
+					<LinearLayout 
+								android:paddingLeft="10sp" 
+								android:orientation="horizontal" 
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content"
+								 >
+							
+							
+					    <Button android:id="@+id/raise2XBB" 
+			              android:layout_width="wrap_content" 
+			              android:layout_height="32sp" 
+			              android:width="65sp"
+			              android:height="25sp"
+			              android:text="2X BB" 
+			              android:visibility="visible"
+			              android:background="@drawable/sbutton_bg"
+			              android:textColor="#fff"
+				          /> 
+				        <Button android:id="@+id/raiseALLIN" 
+				              android:layout_width="wrap_content" 
+				              android:layout_height="32sp" 
+				              android:width="65sp"
+				              android:height="25sp"
+				              android:text="All In" 
+				              android:visibility="visible"
+				              android:background="@drawable/sbutton_bg"
+				              android:textColor="#fff"
+				          /> 
+				        <Button android:id="@+id/raiseACCEPT" 
+				              android:layout_width="wrap_content" 
+				              android:layout_height="32sp" 
+				              android:width="65sp"
+				              android:height="25sp"
+				              android:text="ACCEPT" 
+				              android:visibility="visible"
+				              android:background="@drawable/sbutton_bg"
+				              android:textColor="#fff"
+				          /> 
+			    </LinearLayout>--> 
+			     <TableRow android:layout_height="wrap_content"
+				      		android:layout_width="wrap_content"
+				      		>
+	       			<SeekBar 
+	       						android:paddingBottom="40px"
+	       						android:paddingLeft="20px"
+	       						android:paddingRight="20px"
+								android:id="@+id/betprogress"
+								android:layout_width="295px"
+								android:layout_height="56px"
+								android:thumb="@drawable/bet_slider_knob"
+								android:progressDrawable="@drawable/seek_background"
+								
+								/></TableRow>
+			    </LinearLayout>
+			   
+			  </LinearLayout>    
+			  
+			</LinearLayout>
+			
+     </RelativeLayout>
+
+</LinearLayout>

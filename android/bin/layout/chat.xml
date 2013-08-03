@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+  <TableLayout  android:layout_width="fill_parent" android:layout_height="fill_parent">
+  	<ScrollView android:layout_width="fill_parent"  android:layout_height="wrap_content" android:id="@+id/scrollview">
+  
+	<TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingTop="5px" android:paddingLeft="5px">
+		<TextView  android:id="@+id/chatChatText" android:text="" android:layout_width="365px" android:editable="false" android:textColor="#999"
+				android:layout_height="220px" android:textSize="12px" android:scrollbars="vertical" android:background="#123" android:gravity="bottom"/>
+    </TableRow>
+	</ScrollView>
+	
+	
+	<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+				android:gravity="bottom" android:layout_marginTop="5px"  android:layout_marginLeft="5px">
+			<EditText  android:id="@+id/chatSendText" android:text="" android:layout_width="250px" android:singleLine="true" 
+				android:layout_height="40px" android:textSize="18px" android:autoText="true" android:paddingTop="5px"></EditText>
+			<Button  android:id="@+id/chatSendB" android:text="Send"
+					android:layout_width="wrap_content" android:layout_height="40px"
+					android:background="@drawable/sbutton_bg" android:textColor="#fff"/>
+			<Button  android:id="@+id/chatCloseB" android:text="Close"
+					android:layout_width="wrap_content" android:layout_height="40px"
+					android:background="@drawable/sbutton_bg" android:textColor="#fff"/>
+		</LinearLayout>
+	</TableRow>
+	</TableLayout>
+</LinearLayout>

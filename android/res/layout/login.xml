@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    
+    android:background="@drawable/loginbackground"
+    android:paddingTop="30px"
+    android:keepScreenOn="true"
+    android:paddingLeft="30dip">
+   
+	 <LinearLayout 
+	 		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content">
+				<TextView 
+						android:id="@+id/loginid"
+						android:text="@string/login" 
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content" 
+						android:textColor="#ffffff" 
+						android:textSize="27px" 
+						android:gravity="bottom"  />
+	</LinearLayout>
+	<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:orientation ="horizontal"
+				 android:gravity="center_vertical">
+	 	<LinearLayout 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:orientation ="vertical"
+					>
+	 	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:paddingRight="0dip"
+	    android:keepScreenOn="true"
+	    android:gravity="top|left"  >
+	    
+			<TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingBottom="3px" android:paddingTop="3px" android:paddingRight="25px">
+						<TextView   
+						
+								android:id="@+id/statusText" 
+								android:layout_width="fill_parent"
+							 	android:layout_height="wrap_content" 
+							 	android:textColor="#ED1C24" 
+								android:textStyle="normal" 
+								android:textSize="14px" 
+								android:gravity="center_vertical|right"  />
+				</TableRow>
+				<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content"  android:paddingRight = "25px" >
+					<EditText 
+							android:id="@+id/userText"  
+							android:layout_width="285px" 
+							android:layout_height="wrap_content"  
+							android:singleLine="true" 
+							android:textColor="#6D6E71" 
+							android:hint ="@string/usernamehint" 
+							android:textSize="16px" />
+				</TableRow>
+				<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingRight = "25px">
+					<EditText 
+							android:id="@+id/passText"  
+							android:layout_width="285px" 
+							android:singleLine="true" 
+							android:layout_height="wrap_content" 
+							android:textColor="#6D6E71"
+							android:hint = "@string/passwordhint" 
+							android:password = "true"
+							android:textSize="16px"/>
+				</TableRow>
+				<TableRow android:layout_width="fill_parent" android:layout_height="wrap_content"   >
+		  				
+							 	
+					 	 <CheckBox
+				 	 			android:id="@+id/startCheckBox"
+								android:layout_width="fill_parent" 
+								android:layout_height="30px"
+								android:button="@drawable/checkbox_bg"
+								android:gravity="center_vertical|left"
+								android:textColor="#58595B"
+								android:text="@string/remembercredentials"
+								/>
+						
+				</TableRow>
+			
+				
+				<LinearLayout 
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content" 
+						android:gravity="right" 
+						android:orientation="horizontal">
+					<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingRight="10px" android:paddingTop="5px">
+							<Button 
+								android:text="@string/cancelvalue" 
+								android:id="@+id/exitButton" 
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content" 
+								android:background="@drawable/cancel_bg"
+								 android:textColor="#939598"
+								 android:textSize="14px"
+								 />
+					</TableRow>
+				 	<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" >
+							<Button 
+								android:text="@string/okvalue"
+								android:id="@+id/loginButton" 
+								android:layout_width="wrap_content"   
+								android:layout_height="wrap_content"
+								android:background="@drawable/bbutton_bg"
+								android:paddingLeft="10px"
+								android:textColor="#ffffff" 
+								android:textStyle="bold"
+								android:textSize="16px" />
+					</TableRow>
+				</LinearLayout>
+				</LinearLayout>
+		</LinearLayout>
+	
+		<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:gravity="center_horizontal"
+				android:paddingTop = "35px">
+				<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="right" 
+				android:paddingBottom="5px">
+					<TextView 
+						android:text="@string/playersonline" 
+						android:id="@+id/playersview" 
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+						android:textSize="16px" 
+						android:textColor="#F2F2F2"/>	
+				</TableRow>
+				
+				<TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" >
+					<TextView
+							android:text="00000" 
+							android:id="@+id/playersonline" 
+							android:layout_width="wrap_content"	
+							android:layout_height="wrap_content"
+					 		android:paddingLeft="15dip" 
+					 		android:textSize="24px"   
+					 		android:textColor="#ffffff"/>		
+				</TableRow>
+		</LinearLayout>
+	</LinearLayout>
+	<!-- <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="bottom" android:paddingBottom="2dip">
+		<TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="right" android:paddingLeft="115px">
+					<TextView android:text="Players Online:" android:id="@+id/playersview" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+							android:paddingLeft="130dip" android:textSize="24px" android:textColor="#BFD7EF"/>	
+					<TextView android:text="45.616" android:id="@+id/playersonline" android:layout_width="wrap_content"	android:layout_height="wrap_content"
+					 	android:paddingLeft="15dip" android:textSize="30px"   android:textColor="#ffffff"/>		
+			</TableRow>
+			<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingLeft="5dip">
+			<LinearLayout  android:layout_width="wrap_content"	
+							  android:layout_height="wrap_content" >
+						<TextView  android:text="poker.bluespade v " android:layout_width="wrap_content"	android:layout_height="wrap_content" 
+							android:textSize="12dip"/>
+						<TextView android:text="@string/version" android:layout_width="wrap_content"	android:layout_height="wrap_content" 
+							android:textSize="12dip"/>
+			</LinearLayout>
+			</TableRow>
+	</TableLayout>
+</TableRow> -->
+</LinearLayout>

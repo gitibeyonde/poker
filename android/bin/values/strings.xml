@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="version">1.4</string>
+    <string name="app_name">Blue Ace</string> 
+    <string name="loading">Loading...</string>
+    <string name="connecting">Connecting...</string>
+    <string name="connected">Connected...</string>
+    <string name="errortitle">error message:</string>
+    <string name ="errormessage">Your phone currently cannot access the internet.</string>
+    <string name="notabletoconnect">Not able To Connect...</string>
+    <string name="okvalue">OK</string>
+    <string name="cancelvalue">Cancel</string>
+    <string name="login">Login</string>
+    <string name="Invaliduseridpassword">Invalid username and/or password</string>
+    <string name="usernamehint">enter login name</string>
+    <string name="passwordhint">enter password</string>
+    <string name="remembercredentials">Remember credentials?</string>
+    <string name="forgotpassword">forgot password </string> 
+    <string name="playersonline">Players Online: </string>
+    
+    <string name="mainlobby">Main Lobby</string>
+    <string name="realmoneybalence">Real Money Balance:</string>
+    <string name="playmoneybalence">Play Money Balance:</string>
+    <string name="startplaying">Start Playing</string>
+    <string name="settings">Settings</string>
+    <string name="myaccount">My Account</string>
+    <string name="referafriend">Refer a Friend</string>
+    <string name="exitgame">ExitGame</string>
+
+    <string name="emailsentsuccess">email sent successfully</string>
+    <string name="emailsendingfail">email sending fail</string>
+    <string name="friendemailaddress">Friend\'s e-mail address</string>
+    <string name="playvalue">Play</string>
+    
+    <string name="autopostblind">Auto Post Blind</string>
+    <string name="sound">Sound</string>
+    <string name="colordeck">4 Color Deck</string>
+    <string name="back">Back</string>
+    
+    <string name="you">You</string>
+    <string name="enteremailaddress">enter email address</string>
+    <string name="enterpassword">enter password</string>
+    <string name="changepassword">Change Password</string>
+    <string name="save">Save</string>
+    
+    <string name="entercurrentpassword">enter current password</string>
+    <string name="enternewpassword">enter new password</string>
+    <string name="verifynewpassword">verify new password</string>
+    
+    <string name="email">For feedback write to info@supergameasia.com </string>
+    <string name="web">For online multi-player experience visit http://www.supergameasia.com </string>
+    <string name="author">from Supergame Technologies </string>
+    <string name="help">This is a light and free version of popular Texas Holdem.  The target is to make a better 5 card hand to win the pot.</string>
+    <string name="sep">\n</string>
+    <string name="hr">------------------------------ </string>
+    <string name="start">Start</string>
+    <string name="about">About</string>
+    <string name="join">Join</string>
+    <string name="leave">Leave</string>
+    <string name="sit_in">Sit In</string>
+    <string name="opt_out">Opt Out</string>
+    <string name="wait">Wait</string>
+    <string name="bigblind">BB $</string>
+    <string name="smallblind">SB $</string>
+    <string name="bet">Bet$</string>
+    <string name="ante">Ante</string>
+    <string name="all_in">All In</string>
+    <string name="call">Call$</string>
+    <string name="raise">Raise$</string>
+    <string name="check">Check</string>
+    <string name="fold">Fold</string>
+    <string name="main_no_items">Loading tables....Please wait !</string>
+    
+    <string name="agrement"></string>
+        <string name="invite">Invite Your Friend over to BlueSpade<sup><font size="12">TM</font></sup>  to play poker, so you can both earn great rewards!</string>
+    
+    <string name="language_names">Select Lanuage</string>
+    <string name="cardgametype">Select Card Game Type</string>
+    <string name="gametype">Select game Type</string>
+    <string name="moneytype">Select Real/Play</string>
+    <string name="money">Select Money</string>
+    <string name="betting">Select BettingType</string>
+    <string name="tableseates">Select table seats</string>
+    <string name="opponets">Select minopponets</string>
+    <string name="flop">Select Flop</string>
+
+     <string-array name="languages">
+        <item>English</item>
+        <item>French</item>
+        <item>German</item>
+
+    </string-array>
+    
+       <string-array name="CardGameType">
+       	<item>Texas Hold,em</item>
+       	<item>Omaha Hi</item>
+       	</string-array> 
+        
+        <string-array name="GameType">
+         <item>Ring game</item>
+        <item>Sit\'n\' Go</item>
+        </string-array>
+        
+        <string-array name="moneytypearray">
+        <item>Real Money</item>
+        <item>Play Money</item>
+        </string-array>
+        
+        <string-array name="ringgamerealmoney">
+        <item>$0.01/$0.02</item>
+		<item>$0.02/$0.04</item>
+		<item>$0.05/$0.10</item>
+		<item>$0.1/$0.2</item>
+		<item>$0.25/$0.5</item>
+		<item>$1/$2</item>
+		<item>$2/$4</item>
+		<item>$3/$6</item>
+		<item>$5/$10</item>
+        </string-array>
+        
+        <string-array name="ringgameplaymoney">
+        <item>1/2</item>
+		<item>5/10</item>
+		<item>10/20</item>
+		<item>25/50</item>
+		<item>50/100</item>
+		<item>100/200</item>
+		<item>250/500</item>
+		<item>500/1000</item>
+		<item>1000/2000</item>
+        </string-array>
+        
+        <string-array name="sitngorealmoney">
+        <item>$1+$0.1</item>
+		<item>$2+$0.2</item>
+		<item>$3+$0.3</item>
+		<item>$5+$0.5</item>
+		<item>$10+$1</item>
+        </string-array>
+        
+        <string-array name="sitngoplaymoney">
+		<item>250</item>
+		<item>500</item>
+		<item>1000</item>
+		<item>2000</item>
+        </string-array>
+        
+     
+        <string-array name="BettingType">
+        <item>NL</item>
+        <item>PL</item>
+        </string-array>
+        <string-array name="TableSeats">
+        <item>2</item>
+        <item>6</item>
+        <item>10</item>
+        </string-array>
+        <string-array name="minOpponents">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        </string-array>
+        <string-array name="Flop">
+        <item>-</item>
+	<!-- 	<item> <20%</item>
+		<item> <40% (> 20%)</item>
+		<item> <60% (> 40%)</item>
+		<item> <80% (> 60%)</item>
+		<item> <100% (> 80%)</item>-->
+        
+        </string-array>
+        
+        <string name="accountnote">Please enter Your password to activate changes!</string>
+        
+        
+        <string name="login_fr">Connectez-vous</string>
+        
+</resources>

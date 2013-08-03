@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="20dip">
+        <TextView
+            android:id="@+id/tableName"
+            android:layout_width="100px"
+            android:layout_height="fill_parent"
+        />
+        <TextView
+            android:id="@+id/stakes"
+            android:layout_width="80px"
+            android:layout_height="fill_parent"
+        />
+        <TextView
+            android:id="@+id/players"
+            android:layout_width="60px"
+            android:layout_height="fill_parent"
+        />
+        <TextView
+            android:id="@+id/pot"
+            android:layout_width="50px"
+            android:layout_height="fill_parent"
+        />
+    </LinearLayout>
+</LinearLayout>

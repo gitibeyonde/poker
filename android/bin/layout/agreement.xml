@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/loginbg" android:padding="15px">
+    <ScrollView android:id="@+id/agreeScroll" android:textColor="#FFFFFF" android:layout_width="300dip"  
+				android:layout_height="wrap_content" android:textSize="12px">
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:gravity="bottom" android:layout_marginTop="5px" android:orientation="vertical" >
+			<TextView android:layout_width="300dip" android:layout_height="wrap_content"  
+			          android:text="@string/agrement"/>
+			<LinearLayout android:id="@+id/agreeBar" android:layout_width="300dip" android:layout_height="fill_parent" android:visibility="visible"
+			android:gravity="bottom" android:layout_marginTop="5px" android:orientation="horizontal" >
+				<Button android:text="Agree" android:id="@+id/agreeAgreeB" 
+						android:layout_width="118dip" android:layout_height="40dip"
+						android:background="@drawable/bbutton_bg" android:clickable="true"/>
+				<Button android:text="Don't Agree" android:id="@+id/agreeDontAgreeB" 
+						android:layout_width="118dip" android:layout_height="40dip"
+						android:background="@drawable/bbutton_bg" android:clickable="true"/>
+			</LinearLayout>
+		</LinearLayout>	
+	</ScrollView>
+</LinearLayout>

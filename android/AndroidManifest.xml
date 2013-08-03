@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="bap.texas"
+      android:versionName="1.1.0" android:versionCode="2">
+    <application android:icon="@drawable/bluespade_icon" android:label="@string/app_name" android:theme="@style/Theme.NoBackground">
+    
+    
+     <activity android:name=".ActivitySplash" android:label="@string/app_name"
+                  		android:noHistory="true" android:screenOrientation="landscape"
+                  		android:stateNotNeeded="true"
+                  		android:launchMode="standard" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  		android:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    
+        <!-- activity android:name=".ActivityTable" android:label="@string/app_name"
+                  		android:noHistory="true" android:screenOrientation="landscape"
+                  		android:launchMode="standard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-->
+         <activity android:name=".ActivityLogin"
+        				android:launchMode="standard" android:screenOrientation="landscape"
+                  		android:label="@string/app_name"
+                  		android:noHistory="true" android:stateNotNeeded="true"
+                  		android:configChanges="orientation|keyboardHidden">
+        </activity>
+        <activity android:name=".ShowPopUp"
+        				android:launchMode="singleTask" android:screenOrientation="landscape"
+                  		android:label="@string/app_name"
+                  		android:noHistory="true" android:stateNotNeeded="true"
+                  		android:configChanges="orientation|keyboardHidden">
+        </activity>
+        <activity android:name=".ActivityImageUploader"
+        				android:launchMode="singleTask" android:screenOrientation="landscape"
+                  		android:label="@string/app_name"
+                  		android:noHistory="true" android:stateNotNeeded="true"
+                  		android:configChanges="orientation|keyboardHidden">
+                  		</activity>
+         <activity android:name=".ActivityAccount"
+        				android:launchMode="singleTask" android:screenOrientation="landscape"
+                  		android:label="@string/app_name"
+                  		android:noHistory="true" android:stateNotNeeded="true"
+                  		android:configChanges="orientation|keyboardHidden">
+        </activity>
+        <activity android:name=".ActivitySignUp"
+        				android:launchMode="singleTask" android:screenOrientation="landscape"
+                  		android:label="@string/app_name"
+                  		android:noHistory="true" android:stateNotNeeded="true"
+                  		android:configChanges="orientation|keyboardHidden">
+        </activity>
+         <activity android:name=".ActivityAgree"
+        				android:launchMode="singleTask" android:screenOrientation="landscape"
+                  		android:label="@string/app_name"
+                  		android:noHistory="true" android:stateNotNeeded="true"
+                  		android:configChanges="orientation|keyboardHidden">
+        </activity>
+        <activity android:name=".ActivityMainLobby"
+        				android:launchMode="singleTask" android:screenOrientation="landscape"
+                  		android:label="@string/app_name"
+                  		android:noHistory="true" android:stateNotNeeded="true"
+                  		android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  		android:configChanges="orientation|keyboardHidden">
+        </activity >
+        <activity android:name=".ActivitySettings"
+        				android:launchMode="singleTask" android:screenOrientation="landscape"
+                  		android:label="@string/app_name"
+                  		android:noHistory="true" android:stateNotNeeded="true"
+                  		android:configChanges="orientation|keyboardHidden">
+        </activity >
+        <activity android:name=".ActivityRefer"
+        				android:launchMode="singleTask" android:screenOrientation="landscape"
+                  		android:label="@string/app_name"
+                  		android:noHistory="true" android:stateNotNeeded="true"
+                  		android:configChanges="orientation|keyboardHidden">
+        </activity >
+        <activity android:name=".ActivityLobby"
+        				android:launchMode="singleTask" android:screenOrientation="landscape"
+                  		android:label="@string/app_name"
+                  		android:noHistory="true" android:stateNotNeeded="true"  
+                  		android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  		android:configChanges="orientation|keyboardHidden">
+        </activity >
+        <activity android:name=".ActivityTableType"
+        				android:launchMode="singleTask" android:screenOrientation="landscape"
+                  		android:label="@string/app_name"
+                  		android:noHistory="true" android:stateNotNeeded="true"
+                  		android:configChanges="orientation|keyboardHidden">
+        </activity >
+        <activity android:name=".ActivityTable"
+                  		android:label="@string/app_name" android:screenOrientation="landscape"
+                  		android:launchMode="standard" android:alwaysRetainTaskState="true"
+                  		android:configChanges="orientation|keyboardHidden">
+        </activity>
+      
+      <activity android:name=".ActivityChangePassword"
+                  		android:label="@string/app_name" android:screenOrientation="landscape"
+                  		android:launchMode="singleTask" 
+                  		android:noHistory="true" android:stateNotNeeded="true"
+                  		android:configChanges="orientation|keyboardHidden">
+        </activity>
+    </application>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+	<user-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<user-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	
+</manifest> 

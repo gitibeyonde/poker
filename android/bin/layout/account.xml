@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/my_account_bg"
+    android:keepScreenOn="true" 
+    >
+    	  <LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		   android:paddingTop="18px"
+		    android:paddingLeft="32px">
+		 		 <TableRow	android:layout_width="fill_parent" 	android:layout_height="wrap_content">
+						<TextView android:text="@string/myaccount" 
+								  android:layout_width="fill_parent"  
+								  android:layout_height="wrap_content" 
+								  android:textColor="#ffffff" 
+								  android:textSize="27px" 
+								  android:id="@+id/myaccountTV"/>
+				</TableRow>
+				<TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingTop="5px" >
+								<TextView 
+										android:text="" 
+										android:layout_width="wrap_content"	
+										android:layout_height="wrap_content" 
+										android:id="@+id/usernameMYACC"	
+										android:linksClickable="true" 
+										android:textSize="16px" 
+										android:gravity="left"
+										android:textColor="#BFD7EF"
+										/>		
+				<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" android:gravity="right" android:paddingRight="170px">
+								<TextView 
+										android:text="@string/you" 
+										android:layout_width="wrap_content"	
+										android:layout_height="wrap_content" 
+										android:linksClickable="true" 
+										android:textSize="16px" 
+										android:gravity="left"
+										android:textColor="#A7A9AC" 
+										android:id="@+id/youTV"
+										/>	
+										</LinearLayout>
+					</TableRow>	
+			</LinearLayout>		
+			<LinearLayout 
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="horizontal"
+					    android:gravity="right"
+					    android:paddingTop="10px"
+					    android:paddingRight="40px">
+				    <TableRow android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="center_vertical" >
+					    <Button
+								android:id="@+id/leftmove" 
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content" 
+								android:background="@drawable/leftgaller_bg"/>
+				    </TableRow>
+					<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_vertical"  >
+					
+					    <Gallery
+					        android:id="@+id/gallery1"
+					        android:layout_height="80px"  android:layout_width="190px"
+					        android:unselectedAlpha="5" android:addStatesFromChildren="false"/>     
+					</TableRow>
+					<TableRow android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="center_vertical" >
+						<Button
+							android:id="@+id/rightmove" 
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content" 
+							android:background="@drawable/rightgaller_bg"/>
+					</TableRow>
+			 </LinearLayout>			
+	 <TableRow  android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingLeft="30dip">
+ 	<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="17px"
+    >
+			
+     		<LinearLayout 
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="vertical">
+				<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" >
+						<EditText
+								  android:id="@+id/emailidMYACC"
+								  android:layout_width="200px"
+								  android:layout_height="40px"
+								  android:textSize="16px" 
+								  android:textColor="#6D6E71" 
+								  android:singleLine="true"
+								  android:hint="@string/enteremailaddress"
+								 	/>
+	     		</TableRow>
+				<TableRow android:layout_height="wrap_content" android:layout_width="wrap_content">
+						<EditText
+								  android:id="@+id/userpassMYACC"
+								  android:layout_width="200px"
+								  android:layout_height="40px"
+								  android:textSize="16px" 
+								  android:textColor="#BCBEC0"
+								  android:singleLine="true" 
+								  android:hint="@string/enterpassword" 
+								  android:password="true"
+								  />
+					   <TextView
+								  android:id="@+id/statusACC"  
+								  android:layout_width="fill_parent"  
+								  android:layout_height="wrap_content" 
+								  android:textColor="#ED1C24" 
+								  android:textSize="16px" />
+	     		</TableRow>
+				<LinearLayout 
+						android:layout_width="fill_parent" 
+						android:layout_height="fill_parent" 
+						android:orientation="horizontal">
+					<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingRight="40px" android:paddingTop="5px" android:gravity="left">
+							<Button 
+								android:text="@string/changepassword" 
+								android:id="@+id/changepassword" 
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content" 
+								android:background="@drawable/password_bg"
+								android:textColor="#6D6E71"
+								android:textSize="16px"
+								android:nextFocusRight="@+id/cancelbuttonMYACC"
+								 />
+					</TableRow>
+					<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingRight="10px" android:paddingTop="5px" >
+							<Button 
+								android:text="@string/cancelvalue" 
+								android:id="@+id/cancelbuttonMYACC" 
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content" 
+								android:background="@drawable/cancel_bg"
+								android:textColor="#939598"
+								android:textSize="14px"
+								android:nextFocusRight="@+id/savebuttonMYACC"
+								 />
+					</TableRow>
+				 	<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" >
+							<Button 
+								android:text="@string/save"
+								android:id="@+id/savebuttonMYACC" 
+								android:layout_width="wrap_content"   
+								android:layout_height="wrap_content"
+								android:background="@drawable/bbutton_bg"
+								android:paddingLeft="10px"
+								android:textColor="#ffffff" 
+								android:textStyle="bold"
+								android:textSize="16px" />
+					</TableRow>
+				</LinearLayout>
+	</LinearLayout>
+	</LinearLayout>
+	</TableRow>
+</LinearLayout>
+
+
+

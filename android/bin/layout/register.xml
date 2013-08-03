@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="@drawable/loginbg"
+    android:keepScreenOn="true">
+    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+			<TextView android:text="Sign-up Form" android:textSize="16px" android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" android:paddingLeft="125dip" >			</TextView>
+			<TextView android:id="@+id/regStatus" android:paddingLeft="35dip" android:text=""  android:textSize="12px" 
+			 android:layout_width="fill_parent" android:layout_height="wrap_content" ></TextView>
+	</LinearLayout>
+	<TableLayout  android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingLeft="15px">
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:text="Userid:"  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<EditText android:text="" android:id="@+id/regUser"  android:layout_width="210px" 
+			android:layout_height="wrap_content" android:scrollHorizontally="true"></EditText>
+		</TableRow>
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:text="Passwd:"  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<EditText android:text="" android:id="@+id/regPass"  android:layout_width="210px"  android:password="true" 
+			android:layout_height="wrap_content" android:scrollHorizontally="true"></EditText>
+		</TableRow>
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:text="Rep.Pass:"  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<EditText android:text="" android:id="@+id/regRep"  android:layout_width="210px"   android:password="true" 
+			android:layout_height="wrap_content" android:scrollHorizontally="true"></EditText>
+		</TableRow>
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:text="Email:"  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<EditText android:text="" android:id="@+id/regEmail"  android:layout_width="210px"  
+			android:layout_height="wrap_content" android:scrollHorizontally="true"></EditText>
+		</TableRow>
+	</TableLayout>
+	
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+					android:gravity="bottom" android:paddingTop="0px">
+				<Button android:text="Submit" android:id="@+id/regSubmitB" 
+						android:layout_width="118dip" android:layout_height="40px"
+						android:background="@drawable/bbutton_bg" android:clickable="true"/>
+				<Button android:text="Reset" android:id="@+id/regCancelB" 
+						android:layout_width="118dip" android:layout_height="40px"
+						android:layout_alignRight="@+id/regCancelEmail"
+						android:background="@drawable/bbutton_bg" android:clickable="true"/>
+				<Button android:text="Back" android:id="@+id/regBackB" 
+						android:layout_width="118dip" android:layout_height="40px"
+						android:layout_alignRight="@+id/regBackEmail"
+						android:background="@drawable/bbutton_bg" android:clickable="true"/>
+			</LinearLayout>
+		</TableRow>
+			
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/girl"
+    android:keepScreenOn="true">
+
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+				  android:orientation="horizontal" android:paddingTop="10px">
+
+	<TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:paddingLeft="50px" >
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:text="Play Tables" android:layout_width="wrap_content"  
+						android:layout_height="wrap_content" android:paddingLeft="25px"/>
+		</TableRow>
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<Button android:text="0.02/NL Table" android:background="@drawable/bbutton_bg" android:clickable="true"
+					android:id="@+id/tableTypePlayC2NL" android:layout_width="118dip" android:layout_height="40dip"/>
+		</TableRow>
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<Button android:text="0.10/NL Table" android:background="@drawable/bbutton_bg" android:clickable="true"
+					android:id="@+id/tableTypePlayC10NL"	android:layout_width="118dip" android:layout_height="40dip"/>
+		</TableRow>
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<Button android:text="0.50/NL Table" android:background="@drawable/bbutton_bg" android:clickable="true"
+					android:id="@+id/tableTypePlayC50NL" android:layout_width="118dip" android:layout_height="40dip"/>
+			
+		</TableRow>
+	</TableLayout>
+	<TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:paddingLeft="10px">
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:text="Real Tables" android:layout_width="wrap_content"  
+						android:layout_height="wrap_content" android:paddingLeft="25px"/>
+		</TableRow>
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<Button android:text="0.02/NL Table" android:background="@drawable/bbutton_bg" android:clickable="true"
+					android:id="@+id/tableTypeRealC2NL" android:layout_width="118dip" android:layout_height="40dip"/>
+		</TableRow>
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<Button android:text="0.10/NL Table" android:background="@drawable/bbutton_bg" android:clickable="true"
+					android:id="@+id/tableTypeRealC10NL"	android:layout_width="118dip" android:layout_height="40dip"/>
+		</TableRow>
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<Button android:text="0.50/NL Table" android:background="@drawable/bbutton_bg" android:clickable="true"
+					android:id="@+id/tableTypeRealC50NL" android:layout_width="118dip" android:layout_height="40dip"/>
+			
+		</TableRow>
+	</TableLayout>
+	
+</LinearLayout>
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingLeft="120px">
+			<Button android:text="back" android:background="@drawable/bbutton_bg" android:clickable="true"
+					android:id="@+id/tableTypeBack" android:layout_width="118dip" android:layout_height="40dip"/>
+		</TableRow>	
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingTop="25dip"
+				  android:paddingBottom="0dip" android:paddingLeft="30dip" android:paddingRight="10dip">
+			
+			<ImageView 	android:id="@+id/actionAvatar" android:maxWidth="40px" android:maxHeight="60px" 
+						android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						android:src="@drawable/i1"/>
+			<TableLayout  android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingLeft="20dip">
+				<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:text="Name" android:layout_width="wrap_content"  
+						android:layout_height="wrap_content" android:paddingRight="20px"/>
+					<TextView android:text="Real"  android:layout_width="wrap_content"  
+						android:layout_height="wrap_content" android:paddingRight="20px"/>
+					<TextView android:text="Play"  android:layout_width="wrap_content"  
+						android:layout_height="wrap_content" android:paddingRight="20px"/>
+					<TextView android:text="Avg Pot" android:layout_width="wrap_content"  
+						android:layout_height="wrap_content" android:paddingRight="20px"/>
+					<TextView android:text="Online Players"  android:layout_width="wrap_content"  
+						android:layout_height="wrap_content" />
+				</TableRow>
+				<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingTop="5px">
+					<TextView android:id="@+id/tableTypeName" android:text="-name-" android:layout_width="wrap_content"  
+						android:layout_height="wrap_content" android:paddingRight="25px"/>
+					<TextView android:id="@+id/tableTypeGold" android:text="0" android:layout_width="wrap_content"  
+						android:layout_height="wrap_content" android:paddingRight="25px"/>
+					<TextView android:id="@+id/tableTypeSilver" android:text="0" android:layout_width="wrap_content"  
+						android:layout_height="wrap_content" android:paddingRight="25px"/>
+					<TextView android:id="@+id/tableTypeAvgPot" android:text="0" android:layout_width="wrap_content"  
+						android:layout_height="wrap_content" android:paddingRight="25px"/>
+					<TextView android:id="@+id/tableTypeTotPlrs" android:text="0" android:layout_width="wrap_content"  
+						android:layout_height="wrap_content" />
+				</TableRow>
+			</TableLayout>
+	</LinearLayout>
+</LinearLayout>

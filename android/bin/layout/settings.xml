@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/settings_bg"
+    android:keepScreenOn="true"
+    android:paddingLeft="20px"
+    android:paddingTop="13px">
+   
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" >
+		<LinearLayout 
+	 		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:paddingTop="5px"
+    		>
+    		
+  			<LinearLayout 
+				android:layout_width="wrap_content" 
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:gravity="center_vertical" 
+				android:paddingLeft="15px">
+				<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingRight="40px">
+					<TextView 
+							android:text="@string/settings" 
+							android:layout_width="wrap_content"	
+							android:layout_height="wrap_content" 
+							android:linksClickable="true" 
+							android:textSize="27px" 
+							android:textColor="#ffffff" 
+							android:id="@+id/settingsTV"
+							/>		
+				</TableRow>	
+		  		<TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" >
+						<TextView 
+								android:text="" 
+								android:layout_width="fill_parent"	
+								android:layout_height="wrap_content" 
+								android:id="@+id/userNamesettings"	
+								android:linksClickable="true" 
+								android:textSize="16px" 
+								android:gravity="left"
+								android:textColor="#BFD7EF" android:paddingTop="5px"/>		
+				</TableRow>		
+			</LinearLayout>
+			<LinearLayout 
+				android:layout_width="wrap_content" 
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:gravity="center_vertical" android:paddingLeft="71px">
+				<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" >
+					<TextView 
+						android:text="@string/playersonline" 
+						android:id="@+id/playerstextviewsettings" 
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+						android:textColor="#6D6E71" android:textSize="16px"/>	
+				</TableRow>
+				<TableRow android:layout_width="fill_parent" android:layout_height="wrap_content"  android:paddingTop="5px">
+					<TextView
+							android:text="00000" 
+							android:id="@+id/playersonlinesNumber" 
+							android:layout_width="fill_parent"	
+							android:layout_height="wrap_content"
+					 		android:textSize="24px"   
+					 		android:textColor="#ffffff"
+					 		android:gravity="center_horizontal"/>		
+				</TableRow>
+			</LinearLayout>
+	</LinearLayout>	
+		</TableRow>
+ 		
+ 	<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:keepScreenOn="true"
+    android:gravity="bottom" 
+    
+     >
+    <TableRow  android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingBottom="10px" >
+		<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal"  >
+		
+		<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical"  >
+			<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+				<TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+						 	android:gravity="center_vertical" android:background="@drawable/check_1_bg" > 	
+					<TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingLeft="20px">
+						<TextView 
+								android:text="@string/autopostblind" 
+								android:id="@+id/autopostblindTEXTVIEW" 
+								android:layout_width="wrap_content"	
+								android:layout_height="wrap_content" 
+					 			android:textColor="#ffffff" 
+					 			android:textSize="18px"
+					 			android:paddingRight="130px"
+					 			/>
+					 	<CheckBox 
+					 			android:id="@+id/autopostblindCB" 
+					 			android:layout_height="wrap_content" 
+    							android:button="@drawable/checkbox_bg" 
+    							android:layout_width="fill_parent" 
+    							android:gravity="center_vertical"/>
+					</TableRow>
+				</TableLayout>
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingTop="5px" >
+					<TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+							android:gravity="center_vertical" android:background="@drawable/check_1_bg"> 	
+						<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingLeft="20px" >
+							<TextView 
+									android:text="@string/sound" 
+									android:id="@+id/soundTEXTVIEW" 
+									android:layout_width="wrap_content"	
+									android:layout_height="wrap_content" 
+									android:textColor="#ffffff" 
+									android:textSize="18px"
+									android:paddingRight="197px"
+									/>
+							<CheckBox 
+									android:id="@+id/soundCB"
+									android:layout_width="wrap_content" 
+		    						android:layout_height="wrap_content" 
+		    						android:button="@drawable/checkbox_bg" 
+		    						android:gravity="center_vertical"/>
+						</TableRow>
+					</TableLayout>
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingTop="5px"  >
+					<TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						 	android:gravity="center_vertical" android:background="@drawable/check_1_bg"> 	
+						<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content"  android:paddingLeft="20px" >
+							<TextView 
+								android:text="@string/colordeck" 
+								android:id="@+id/colordeskTEXTVIEW" 
+								android:layout_width="wrap_content"	
+								android:layout_height="wrap_content" 
+								 android:textColor="#ffffff"  
+								 android:textSize="18px"
+								 android:paddingRight="150px"
+								/>
+							<CheckBox 
+								android:id="@+id/colordeskCB"
+								android:layout_width="wrap_content" 
+		    					android:layout_height="wrap_content" 
+		    					android:button="@drawable/checkbox_bg" 
+		    					android:gravity="center_vertical"/>
+						</TableRow>
+					</TableLayout>
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingTop="5px" >
+				<TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_vertical" > 	
+					<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" >
+		   				 <Spinner 
+						        android:id="@+id/languagespinner"
+						        android:layout_width="310px"
+						        android:layout_height="50px"	
+						        android:drawSelectorOnTop="true"
+						        android:prompt="@string/language_names" 
+						        android:paddingLeft="20px"
+						        android:fadingEdgeLength="50px" 
+						        android:background="@drawable/spinner_bg"
+						        />
+     				</TableRow>
+				</TableLayout>
+			</LinearLayout>
+	</LinearLayout>
+	</LinearLayout>
+	</TableRow>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="right|bottom" android:paddingBottom="50px">
+			
+			<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" >
+				<Button 
+				android:text="@string/back"
+				android:id="@+id/okB" 
+				android:layout_width="wrap_content"   
+				 android:layout_height="wrap_content" android:background="@drawable/bbutton_bg" android:paddingLeft="10px"
+				android:textColor="#ffffff" android:textStyle="bold" android:textSize="15px" >
+				</Button>
+			</TableRow>
+	</LinearLayout>
+	</LinearLayout>
+	
+	
+	<!--  <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="bottom" android:paddingBottom="2dip" android:paddingLeft="5px">
+		
+						<TextView android:text="pocker.bluespade v " android:layout_width="wrap_content"	android:layout_height="wrap_content" android:paddingTop="18dip"
+							android:textSize="12dip"/>
+						<TextView android:text="@string/version" android:layout_width="wrap_content"	android:layout_height="wrap_content" android:paddingTop="18dip"
+							android:textSize="12dip"/>
+			
+	
+	</TableRow>-->
+</LinearLayout>
